@@ -20,3 +20,29 @@ li {
   color: seashell;
   opacity: 0.9;
 }
+
+/*Navigation Bar Styling*/
+
+.navigation {
+  display: inline-flex;
+  align-items: center;
+
+  height: 69px;
+  border-bottom: 1px solid seashell;
+}
+
+.logo {
+  margin-left: 10px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.nav-bar ul {
+  display: flex;
+}
+
+.nav-bar li {
+  align-items: flex-end;
+}
