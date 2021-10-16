@@ -14,7 +14,8 @@ h3,
 h4,
 h5,
 p,
-li {
+li,
+figcaption {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 22px;
   color: seashell;
@@ -48,7 +49,6 @@ li {
   height: 700px;
   display: flex;
   align-items: center;
-  border: 2px solid seashell;
   margin: 0 20px;
   background-image: url("/images/img-mission-background.webp");
 }
@@ -63,4 +63,31 @@ li {
 h4 {
   text-align: center;
   margin-top: 20px;
+}
+
+/*Galery section*/
+
+.galery {
+  width: 1000px;
+  margin-left: 120px;
+  margin-top: 50px;
+  border: 2px solid seashell;
+}
+
+.galery-images {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+}
+
+figure {
+}
+
+figure img {
+  height: 200px;
+  width: 300px;
+}
+
+figure figcaption {
+  text-align: center;
 }
