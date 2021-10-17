@@ -86,15 +86,33 @@ h4 {
   border: 2px solid seashell;
 }
 
+.galery h2 {
+  font-size: 35px;
+  margin-top: 50px;
+}
+
+.galery h4 {
+  margin-bottom: 30px;
+}
+
 .galery-images {
+  width: auto;
   display: flex;
   flex-wrap: wrap;
-  align-content: flex-end;
+  align-content: center;
 }
 
 figure img {
   height: 200px;
   width: 300px;
+}
+
+.margin-right {
+  margin-right: 48px;
+}
+
+.margin-left {
+  margin-left: 185px;
 }
 
 figure figcaption {
