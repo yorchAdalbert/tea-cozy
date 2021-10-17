@@ -22,7 +22,11 @@ figcaption {
   opacity: 0.9;
 }
 
-/*Navigation Bar Styling*/
+.border {
+  border: 2px solid seashell;
+}
+
+/*Navigation Bar Section*/
 
 .container {
   display: flex;
@@ -80,9 +84,6 @@ h4 {
   align-content: flex-end;
 }
 
-figure {
-}
-
 figure img {
   height: 200px;
   width: 300px;
@@ -90,4 +91,23 @@ figure img {
 
 figure figcaption {
   text-align: center;
+}
+
+/*Location Section*/
+
+.location {
+  height: 500px;
+  width: 1200px;
+  margin-left: 20px;
+  background-image: url("/images/img-locations-background.webp");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.location-address {
+  height: 300px;
+  width: 300px;
+  background-color: black;
+  margin-left: 40px;
 }
