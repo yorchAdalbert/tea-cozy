@@ -111,3 +111,21 @@ figure figcaption {
   background-color: black;
   margin-left: 40px;
 }
+
+/*Contact Bar*/
+
+.contact-bar {
+  height: 200px;
+  width: 1200px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.company-data {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.copyright {
+  margin-left: 20px;
+}
