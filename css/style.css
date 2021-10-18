@@ -144,6 +144,14 @@ figure figcaption {
   margin-top: 35px;
 }
 
+.location figcaption {
+  position: relative;
+  bottom: 295px;
+  font-size: 35px;
+  font-weight: 700;
+  opacity: 0.7;
+}
+
 /*Contact Bar*/
 
 .contact-bar {
