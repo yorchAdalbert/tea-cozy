@@ -41,3 +41,30 @@ nav {
     margin-right: 10px;
     width: 350px;
 }
+
+/* BANNER */
+
+.banner {
+    display: flex;
+    align-items: center;
+    height: 700px;
+    width: 1200px;
+    background-image: url(../assets/img-mission-background.jpg);
+    background-size: cover;
+    margin: auto;
+}
+
+.mission {
+    background-color: black;
+    width: 100%;
+    text-align: center;
+}
+
+.mission h2 {
+    margin-top: 15px;
+}
+
+.mission h4 {
+    text-transform: capitalize;
+    margin: 15px 0;
+}
