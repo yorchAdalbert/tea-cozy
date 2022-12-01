@@ -12,10 +12,14 @@ body {
     background-color: black;
 }
 
+h1,
 h2,
+h3,
 h4,
+h5,
 p,
-a {
+a,
+figcaption {
     color: gray;
 }
 
@@ -67,4 +71,85 @@ nav {
 .mission h4 {
     text-transform: capitalize;
     margin: 15px 0;
+}
+
+/* MAIN SECTION */
+
+.container {
+    width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.marketing {
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 50px;
+}
+
+.galery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.product img {
+    width: 300px;
+    height: 200px;
+}
+
+figcaption {
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+
+/* LOCATION SECTION */
+
+.locations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 550px;
+    margin: auto;
+    background-image: url(../assets/img-locations-background.jpg);
+    background-size: cover;
+}
+
+.cards-location {
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.location {
+    background-color: black;
+    width: 300px;
+    text-align: center;
+}
+
+.location h3,
+.location p {
+    margin: 30px 0;
+}
+
+.locations h2 {
+    margin-bottom: 15px;
+}
+
+/* FOOTER */
+
+.contact {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+footer p {
+    margin-left: 20px;
 }
