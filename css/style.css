@@ -10,13 +10,18 @@ body {
     font-family: Helvetica, sans-serif;
     font-size: 22px;
     background-color: black;
+    opacity: .5;
 }
 
+h1,
 h2,
+h3,
 h4,
+h5,
 p,
-a {
-    color: gray;
+a,
+figcaption {
+    color: white;
 }
 
 /* NAVBAR */
@@ -42,6 +47,10 @@ nav {
     width: 350px;
 }
 
+.nav ul a:hover {
+    text-decoration: none;
+}
+
 /* BANNER */
 
 .banner {
@@ -54,17 +63,103 @@ nav {
     margin: auto;
 }
 
-.mission {
+#mission {
     background-color: black;
     width: 100%;
     text-align: center;
 }
 
-.mission h2 {
+#mission h2 {
     margin-top: 15px;
+    color: white;
+
 }
 
-.mission h4 {
+#mission h4 {
     text-transform: capitalize;
     margin: 15px 0;
+    color: white;
+
+}
+
+/* MAIN SECTION */
+
+#featured-tea {
+    width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.marketing {
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 50px;
+}
+
+.galery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.product img {
+    width: 300px;
+    height: 200px;
+}
+
+figcaption {
+    text-align: center;
+    margin: 10px 0 20px 0;
+}
+
+/* LOCATION SECTION */
+
+#locations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 550px;
+    margin: auto;
+    background-image: url(../assets/img-locations-background.jpg);
+    background-size: cover;
+}
+
+.cards-location {
+    width: 1000px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.location {
+    background-color: black;
+    width: 300px;
+    text-align: center;
+}
+
+.location h3,
+.location p {
+    margin: 30px 0;
+}
+
+#locations h2 {
+    margin-bottom: 15px;
+    color: white;
+}
+
+/* FOOTER */
+
+.contact {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+footer p {
+    margin: 20px;
 }
