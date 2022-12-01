@@ -6,21 +6,24 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Helvetica, sans-serif;
-    font-size: 22px;
-    background-color: black;
-    opacity: .5;
+html {
+    font-size: 18px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: black;
+    opacity: .5;
+    color: white;
+}
+
+
 p,
-a,
-figcaption {
+a {
+    font-size: 1.1rem;
+}
+
+a {
     color: white;
 }
 
@@ -56,9 +59,11 @@ nav {
 .banner {
     display: flex;
     align-items: center;
+    width: 84%;
     height: 700px;
-    width: 1200px;
     background-image: url(../assets/img-mission-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     margin: auto;
 }
@@ -70,32 +75,28 @@ nav {
 }
 
 #mission h2 {
-    margin-top: 15px;
-    color: white;
-
+    margin-top: .9rem;
 }
 
 #mission h4 {
     text-transform: capitalize;
-    margin: 15px 0;
-    color: white;
-
+    margin: .9rem 0;
 }
 
 /* MAIN SECTION */
 
 #featured-tea {
-    width: 1000px;
+    width: 69%;
     margin: auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 
 }
 
 .marketing {
     text-align: center;
-    margin-bottom: 30px;
-    line-height: 50px;
+    margin-bottom: 1.7rem;
+    line-height: 2.8rem;
 }
 
 .galery {
@@ -111,7 +112,7 @@ nav {
 
 figcaption {
     text-align: center;
-    margin: 10px 0 20px 0;
+    margin: .8rem 0 1.1rem 0;
 }
 
 /* LOCATION SECTION */
@@ -119,34 +120,34 @@ figcaption {
 #locations {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 1200px;
+    width: 84%;
     height: 550px;
     margin: auto;
     background-image: url(../assets/img-locations-background.jpg);
+    background-position: center;
     background-size: cover;
 }
 
 .cards-location {
-    width: 1000px;
+    width: 85%;
     display: flex;
     justify-content: space-around;
 }
 
 .location {
     background-color: black;
-    width: 300px;
+    width: 30%;
     text-align: center;
 }
 
 .location h3,
 .location p {
-    margin: 30px 0;
+    margin: 1.45rem 0;
 }
 
 #locations h2 {
-    margin-bottom: 15px;
+    margin: 1.1rem 0;
     color: white;
 }
 
@@ -161,5 +162,85 @@ figcaption {
 }
 
 footer p {
-    margin: 20px;
+    margin: 1.1rem;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 973px) {
+    html {
+        font-size: 17px;
+    }
+
+    .cards-location {
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 666px) {
+    html {
+        font-size: 16px;
+    }
+
+    .banner {
+        height: 570px;
+    }
+
+    .location h3,
+    .location p {
+        margin: 1rem 0;
+    }
+
+    #locations {
+        height: 450px;
+    }
+
+    .nav ul {
+        width: 275px;
+    }
+}
+
+@media only screen and (max-width:460px) {
+    html {
+        font-size: 14px;
+    }
+
+    nav {
+        height: 46px;
+    }
+
+    .logo img {
+        height: 30px;
+    }
+
+    .nav ul {
+        display: none;
+    }
+
+    .banner {
+        width: 95%;
+        height: 550px;
+    }
+
+    #featured-tea {
+        width: 90%;
+    }
+
+    #locations {
+        height: 300px;
+        width: 95%;
+    }
+
+    .cards-location {
+        width: 95%;
+    }
+
+    .location h3,
+    .location p {
+        margin: .8rem 0;
+    }
+
+    .contact {
+        height: 110px;
+    }
 }
