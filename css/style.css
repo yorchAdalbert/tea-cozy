@@ -6,20 +6,13 @@
     box-sizing: border-box;
 }
 
-html {
-    font-size: 18px;
-}
-
 body {
+    width: 100%;
     font-family: Helvetica, sans-serif;
     background-color: black;
     opacity: .5;
     color: white;
-}
-
-p,
-a {
-    font-size: 1.1rem;
+    font-size: 1.125rem;
 }
 
 a {
@@ -32,21 +25,21 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 69px;
-    width: 100%;
+    height: 4.3125rem;
+    min-width: 80rem;
     border-bottom: 1px solid seashell;
 }
 
 .logo img {
-    height: 50px;
-    margin-left: 10px;
+    height: 3.125rem;
+    margin-left: .625rem;
 }
 
 .nav ul {
     display: flex;
     justify-content: space-between;
-    margin-right: 10px;
-    width: 350px;
+    margin-right: .625rem;
+    width: 21rem;
 }
 
 .nav ul a:hover {
@@ -58,8 +51,8 @@ nav {
 .banner {
     display: flex;
     align-items: center;
-    width: 84%;
-    height: 700px;
+    width: 80rem;
+    height: 43.75rem;
     background-image: url(../assets/img-mission-background.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -69,7 +62,7 @@ nav {
 
 #mission {
     background-color: black;
-    width: 100%;
+    width: 80rem;
     text-align: center;
 }
 
@@ -85,8 +78,9 @@ nav {
 /* MAIN SECTION */
 
 #featured-tea {
-    width: 69%;
-    margin: auto;
+    /*max-width: 60rem;
+    margin: auto;*/
+    min-width: 80rem;
     margin-top: 3rem;
     margin-bottom: 3rem;
 
@@ -95,18 +89,31 @@ nav {
 .marketing {
     text-align: center;
     margin-bottom: 1.7rem;
-    line-height: 2.8rem;
+}
+
+.marketing h2 {
+    margin-bottom: .9rem;
 }
 
 .galery {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    width: 70rem;
+    margin: auto;
+}
+
+.product {
+    flex-grow: 1;
+    max-width: 22rem;
+    max-height: 20rem;
+    overflow: hidden;
 }
 
 .product img {
-    width: 300px;
-    height: 200px;
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 figcaption {
@@ -120,8 +127,8 @@ figcaption {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 84%;
-    height: 550px;
+    width: 80rem;
+    height: 34.375rem;
     margin: auto;
     background-image: url(../assets/img-locations-background.jpg);
     background-position: center;
@@ -129,117 +136,54 @@ figcaption {
 }
 
 .cards-location {
-    width: 85%;
+    width: 60rem;
     display: flex;
     justify-content: space-around;
 }
 
 .location {
     background-color: black;
-    width: 30%;
+    width: 17rem;
     text-align: center;
 }
 
 .location h3,
 .location p {
-    margin: 1.45rem 0;
+    margin: 1.5rem 0;
 }
 
 #locations h2 {
-    margin: 1.1rem 0;
-    color: white;
+    font-size: 2.5rem;
+    margin: 1.5rem 0;
 }
 
 /* FOOTER */
 
 .contact {
-    height: 200px;
+    min-width: 80rem;
+    height: 12.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
+    margin-top: 1.1rem;
 }
 
 footer p {
-    margin: 1.1rem;
+    margin: 0 0 1.1rem .625rem;
 }
 
 /* RESPONSIVE */
 
-@media only screen and (max-width: 973px) {
-    html {
-        font-size: 17px;
+@media only screen and (max-width: 426px) {
+    .galery {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
-    .cards-location {
-        width: 95%;
-    }
-}
-
-@media only screen and (max-width: 666px) {
-    html {
-        font-size: 16px;
-    }
-
-    .banner {
-        height: 570px;
-    }
-
-    .location h3,
-    .location p {
-        margin: 1rem 0;
-    }
-
-    #locations {
-        height: 450px;
-    }
-
-    .nav ul {
-        width: 275px;
-    }
-}
-
-@media only screen and (max-width:460px) {
-    html {
-        font-size: 14px;
-    }
-
-    nav {
-        height: 46px;
-    }
-
-    .logo img {
-        height: 30px;
-    }
-
-    .nav ul {
-        display: none;
-    }
-
-    .banner {
-        width: 95%;
-        height: 550px;
-    }
-
-    #featured-tea {
-        width: 90%;
-    }
-
-    #locations {
-        height: 300px;
-        width: 95%;
-    }
-
-    .cards-location {
-        width: 95%;
-    }
-
-    .location h3,
-    .location p {
-        margin: .8rem 0;
-    }
-
-    .contact {
-        height: 110px;
+    .product {
+        max-width: 60rem;
+        max-height: 45rem;
     }
 }

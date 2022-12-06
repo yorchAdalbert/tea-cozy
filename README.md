@@ -16,9 +16,8 @@ This is a landing page project from codecademy.
 
 ### Links
 
-- Solution URL:[]()
-- Live Site URL:[]()
-- Live Site URL:[]()
+- Solution URL:[](https://github.com/yorchAdalbert/tea-cozy)
+- Live Site URL:[](https://tea-cozy.yorchadalbert.com/)
 
 ### Built with
 
